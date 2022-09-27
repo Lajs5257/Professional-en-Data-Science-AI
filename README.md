@@ -24,7 +24,7 @@ En el curso se abordan los siguientes temas:
 ---
 ## Challenges:
 - ### Pt1 [Clase: Intro a Data Vis]:
-  link
+  [Challenge_1](Challenge_1.ipynb)
 - ### Pt2 [Clase: Gráficas datos numéricos]: 
   link
 - ### Pt3 [Clase: Gráficas Datos categóricos]: 
