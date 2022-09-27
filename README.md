@@ -24,18 +24,18 @@ En el curso se abordan los siguientes temas:
 ---
 ## Challenges:
 - ### Pt1 [Clase: Intro a Data Vis]:
-  [Challenge_1](Challenge_1.ipynb)
+  [Challenge 1](Challenge_1.ipynb)
 - ### Pt2 [Clase: Gráficas datos numéricos]: 
-  link
+  [Challenge 2](Challenge_2.ipynb)
 - ### Pt3 [Clase: Gráficas Datos categóricos]: 
-  link
+  [Challenge 3](Challenge_3.ipynb)
 - ### Pt4 [Clase: Mapas]: 
-  link
+  [Challenge 4](Challenge_4.ipynb)
 - ### Pt 5 [Clase: Dash pt1]:
-  link
+  [Challenge 5](Challenge_5.ipynb)
 - ### Pt 6 [Clase: Dash pt1]:
-  link
+  [Challenge 6](Challenge_6.ipynb)
 - ### Pt7 [Clase: Dash pt2]:
-  link
+  [Challenge 7](Challenge_7.ipynb)
 - ### Pt8 [Clase: Dash pt3]:
-  link
+  [Challenge 8](Challenge_8.ipynb)
