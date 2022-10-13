@@ -2,13 +2,17 @@ from dash import Dash, dcc, html, Input, Output
 import plotly.express as px
 import plotly.graph_objects as go
 import requests
+import zipfile
+
+with zipfile.ZipFile('./denue_00_31-33_1121_csv.zip', 'r') as zip_ref:
+    zip_ref.extractall('./')
 repo_url = 'https://raw.githubusercontent.com/angelnmara/geojson/master/mexicoHigh.json' 
 #Archivo GeoJSON
 mx_regions_geo = requests.get(repo_url).json()
 app = Dash(__name__)
 
 # cargamos nuestro conjunto de datos
-dfDatos = pd.read_csv('C:\\Users\\lajs5\\Downloads\\conjunto_de_datos\\denue_inegi_31-33_.csv', encoding="ISO-8859-1", low_memory=False)
+dfDatos = pd.read_csv('./conjunto_de_datos/denue_inegi_31-33_.csv', encoding="ISO-8859-1", low_memory=False)
 # ahora convertimos la columna fecha_alta a tipo fecha en años para facilitar el filtrado
 dfDatos['fecha_alta'] = pd.to_datetime(dfDatos['fecha_alta'].astype(str), format='%Y-%m')
 dfDatos['fecha_alta'] = pd.DatetimeIndex(dfDatos['fecha_alta']).year
