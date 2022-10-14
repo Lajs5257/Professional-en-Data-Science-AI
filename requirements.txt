@@ -16,6 +16,7 @@ entrypoints==0.4
 executing==1.1.1
 Flask==2.2.2
 Flask-Compress==1.13
+gunicorn==20.1.0
 idna==3.4
 ipykernel==6.16.0
 ipython==8.5.0
