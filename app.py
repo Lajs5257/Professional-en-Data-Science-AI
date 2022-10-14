@@ -20,7 +20,7 @@ mx_regions_geo = requests.get(repo_url).json()
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = Dash(__name__, external_stylesheets=external_stylesheets)
-
+server = app.server
 
 # cargamos nuestro conjunto de datos
 dfDatos = pd.read_csv('./conjunto_de_datos/denue_inegi_31-33_.csv', encoding="ISO-8859-1")
@@ -80,3 +80,4 @@ def update_figure(year):
 
 if __name__ == '__main__':
     app.run_server(debug=False)
+    
