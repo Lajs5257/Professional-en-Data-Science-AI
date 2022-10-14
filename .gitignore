@@ -2,3 +2,7 @@ metadatos
 conjunto_de_datos
 diccionario_de_datos
 env
+venv
+*.pyc
+.DS_Store
+.env
