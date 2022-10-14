@@ -15,7 +15,12 @@ with zipfile.ZipFile('./denue_00_31-33_1121_csv.zip', 'r') as zip_ref:
 repo_url = 'https://raw.githubusercontent.com/angelnmara/geojson/master/mexicoHigh.json' 
 #Archivo GeoJSON
 mx_regions_geo = requests.get(repo_url).json()
-app = Dash(__name__)
+
+
+external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
+
+app = Dash(__name__, external_stylesheets=external_stylesheets)
+
 
 # cargamos nuestro conjunto de datos
 dfDatos = pd.read_csv('./conjunto_de_datos/denue_inegi_31-33_.csv', encoding="ISO-8859-1", low_memory=False)
@@ -73,5 +78,5 @@ def update_figure(year):
     fig.update_geos(showcountries=True, showcoastlines=True, showland=True, fitbounds="locations")
     return fig
 
-
-app.run_server(debug=False)
+if __name__ == '__main__':
+    app.run_server(debug=False)
