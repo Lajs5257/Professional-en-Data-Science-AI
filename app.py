@@ -45,6 +45,8 @@ fig3 = px.line(dfEmpresasEstadosAnios, x="fecha_alta", y="id", color='entidad', 
 
 # creamos nuestro dashboard
 app.layout = html.Div([
+    html.H1("Proyecto Final del Curso de Data Science / AI"),
+    html.H2("Luis Alberto Jiménez Soto"),
     html.H1("Industrias manufactureras"),
     html.P("Desde julio de 2010 el Instituto Nacional de Estadística y Geografía ha puesto a disposición de la sociedad el Directorio Estadístico Nacional de Unidades Económicas (DENUE) con in- formación de los negocios activos del país. Los datos que propor- ciona el DENUE permiten identificar a las unidades económicas por el nombre comercial, el tipo de organización jurídica (personas físicas o morales), por su actividad económica y por su tamaño (con base en el estrato de personal ocupado); así como, ubicarlas en el territorio mexicano por regiones, localidades, manzanas y calles. El Directorio también provee las coordenadas geográficas de la ubicación de los establecimientos para que puedan ser visualizados en la cartografía digital o en imágenes satelitales."),
     html.H2("¿Por qué se eligió este conjunto de datos?"),
