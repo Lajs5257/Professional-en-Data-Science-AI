@@ -10,8 +10,11 @@ import plotly.graph_objects as go
 import requests
 import zipfile
 
-with zipfile.ZipFile('./denue_00_31-33_1121_csv.zip', 'r') as zip_ref:
-    zip_ref.extractall('./')
+try:
+    with zipfile.ZipFile('./denue_00_31-33_1121_csv.zip', 'r') as zip_ref:
+        zip_ref.extractall('./')
+except:
+    pass
 repo_url = 'https://raw.githubusercontent.com/angelnmara/geojson/master/mexicoHigh.json' 
 #Archivo GeoJSON
 mx_regions_geo = requests.get(repo_url).json()
