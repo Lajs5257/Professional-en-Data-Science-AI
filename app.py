@@ -23,7 +23,7 @@ app = Dash(__name__, external_stylesheets=external_stylesheets)
 
 
 # cargamos nuestro conjunto de datos
-dfDatos = pd.read_csv('./conjunto_de_datos/denue_inegi_31-33_.csv', encoding="ISO-8859-1")
+dfDatos = pd.read_csv('./conjunto_de_datos/denue_inegi_31-33_.csv', encoding="ISO-8859-1",dtype={'telefono': 'string'})
 # ahora convertimos la columna fecha_alta a tipo fecha en años para facilitar el filtrado
 dfDatos['fecha_alta'] = pd.to_datetime(dfDatos['fecha_alta'].astype(str), format='%Y-%m')
 dfDatos['fecha_alta'] = pd.DatetimeIndex(dfDatos['fecha_alta']).year
