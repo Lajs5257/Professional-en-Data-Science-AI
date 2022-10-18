@@ -3,7 +3,6 @@ from dash import dcc # Componentes HTML preconstruidos para dashboards
 from dash import html # Componentes HTML nativos
 from dash.dependencies import Input, Output # Clases Input y Output
 import plotly.express as px # Generar gráficas e importar datasets con Plotly
-
 import pandas as pd # Recolección y manipulación de datos
 from dash import Dash
 import plotly.graph_objects as go
